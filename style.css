@@ -1,0 +1,58 @@
+#main {
+    background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url(images/background22.jpg);
+    background-repeat: no-repeat;
+}
+
+#main.clicked {
+    background-image: url();
+    background-color: #607a88;;
+}
+
+.center {
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    text-align: center;
+}
+
+.left {
+/*    float: left;*/
+    height: 100vh;
+    background: #001a35;
+    white-space: nowrap;
+    width: 55px;
+    transition: width 1s;
+    font-size: 20px;
+}
+.sideBar {
+    display: inline-block !important;
+}
+
+.left:hover {
+    width: 250px;
+}
+
+.item:hover {
+    background-color: #ccc;
+}
+
+.item {
+    overflow: hidden;
+    color: #fff;
+}
+
+.title {
+    background-color: #eee;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+
+
+.details {
+    margin-left: 25%;
+    top: 100px;
+    position: absolute;
+    width: 50%;
+}
