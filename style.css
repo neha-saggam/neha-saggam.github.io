@@ -3,29 +3,31 @@
     background-repeat: no-repeat;
 }
 
+/*
 #main.clicked {
     background-image: url();
-    background-color: #607a88;;
+    background-color: #0000;
+}
+*/
+
+.linkClicked {
+    background-color: #ccc;
 }
 
 .center {
     position: absolute;
     left: 500px;
     top: 150px;
-    text-align: center;
 }
 
 .left {
-/*    float: left;*/
+    padding-top: 10%;
     height: 100vh;
     background: #001a35;
     white-space: nowrap;
-    width: 55px;
+    width: 53px;
     transition: width 1s;
-    font-size: 20px;
-}
-.sideBar {
-    display: inline-block !important;
+    font-size: 18px;
 }
 
 .left:hover {
@@ -51,8 +53,49 @@
 
 
 .details {
-    margin-left: 25%;
+    margin-left: 15%;
     top: 100px;
     position: absolute;
-    width: 50%;
+    width: 60%;
+    text-align: center
+}
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+    25% {
+    left: 122px;
+    top: 100px;
+  }
+  50% {
+    left: 244px;
+    top: 0;
+  }
+  75% {
+    left: 488px;
+    top: 100px;
+  }
+  100% {
+    left: 800px;
+    top: 0;
+  }
+}
+.stage {
+  border-radius: 6px;
+  height: 150px;
+  position: relative;
+}
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+}
+.ball {
+  position: absolute;
+}
+
+.slide:hover {
+    color: #4c6ef5;
 }
