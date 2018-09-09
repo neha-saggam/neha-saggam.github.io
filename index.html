@@ -17,30 +17,38 @@
         <h4 style="font-size: 20px;"><q>Build a future where people live in harmony with nature.....</q></h4>
     </div>
     <div class="">
-
+        
         <div class="left" id="sideBar" style="display: inline-block;">
+            
+            <div class="item" id="close" style="height:40px;cursor: pointer">
+                <a style="text-decoration: none; color: white"><i class="fas fa-home" style="margin-top:5%; margin-left: 20px; margin-right: 15px;" aria-hidden="true"></i>
+                <span>Home</span>
+                </a>
+            </div>
+
             <div class="openWorkExperienceCard item" style="height:40px;cursor: pointer;">
                 <i class="fa fa-folder-open" aria-hidden="true" style="margin-top:5%; margin-left: 20px; margin-right: 15px;"></i>
                 <span>Work Experience</span>
             </div>
             <div class="openSkillsCard item" style="height:40px;cursor: pointer;">
                 <i class="fa fa-microchip" style="margin-top:5%; margin-left: 20px; margin-right: 15px;" aria-hidden="true"></i>
-                <span>Technical Skills</span>
+                <span>Skills</span>
             </div>
             <div class="openAboutMeCard item" style="height:40px;cursor: pointer; ">
                 <i class="fa fa-user" style="margin-top:5%; margin-left: 20px; margin-right: 15px;" aria-hidden="true"></i>
                 <span>About Me</span>
             </div>
-
-            <div class="item" id="close" style="height:40px;cursor: pointer; margin-top: 200px; ">
-                <a href="https://github.com/neha-saggam" style="text-decoration: none; color: white" target="_blank"><i class="fab fa-github" style="margin-top:5%; margin-left: 20px; margin-right: 15px;" aria-hidden="true"></i>
-                    <span>Github</span>
+            
+            <div class="item" id="" style="height:40px;cursor: pointer; margin-top: 200px; ">
+                <a style="text-decoration: none; color: white" href="https://github.com/neha-saggam" target="_blank"><i class="fab fa-github" style="margin-top:5%; margin-top:5%; margin-left: 20px; margin-right: 15px;" aria-hidden="true"></i>
+                <span>Github</span>
                 </a>
             </div>
-
-            <div class="item" id="close" style="height:40px;cursor: pointer">
+            
+            <div class="item" id="" style="height:40px;cursor: pointer">
                 <a style="text-decoration: none; color: white" href="https://www.linkedin.com/in/nehasaggam/" target="_blank"><i class="fab fa-linkedin" style="margin-top:5%; margin-left: 20px; margin-right: 15px;" aria-hidden="true"></i>
-                <span>LinkedIn</span></a>
+                <span>LinkedIn</span>
+                </a>
             </div>
 
         </div>
@@ -178,11 +186,6 @@ which takes configurations for file accelerator
         $("#skillsCard").hide();
         $("#interestsCard").hide();
         $("#aboutMeCard").hide();
-
-        $("#sideBar ").on("click", function() {
-
-
-        });
 
         $(".openWorkExperienceCard ").on("click", function() {
             $("#workExperienceCard").show("slow");
